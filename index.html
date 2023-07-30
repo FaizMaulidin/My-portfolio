@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faiz MD | Front-end Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Mulish:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="">
+                <h1>FaizMD</h1>
+                <h5>PORTFOLIO</h5>
+            </a>
+        </div>
+        <div class="nav-right">
+            <button class="hamburg" onclick="setPopup()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup">
+        <a href="#home"><button onclick="setPopup()">Home</button></a>
+        <a href="#about-me"><button onclick="setPopup()">About</button></a>
+        <a href="#projects"><button onclick="setPopup()">Projects</button></a>
+        <a href="#contact"><button onclick="setPopup()">Contact</button></a>
+    </div>
+    <div class="home" id="home">
+        <div class="home-wrapper">
+            <div class="home-text">
+                <div class="title">Front-End Web Developer</div>
+                <div class="desc">
+                    <p>
+                        Hi, I'm Faiz Maulidin Denaru.
+                        A passionate Front-end Developer
+                        based in Yogyakarta, Indonesia.
+                    </p>
+                    <a href="https://www.linkedin.com/in/faiz-maulidin-22a4b425b" target="_blank">
+                        <i class="fa-brands fa-linkedin home-icon"></i>
+                    </a>
+                </div>
+                <div class="tech-stack">
+                    <p>Tech Skills</p>
+                    <div class="line"></div>
+                    <div class="icons">
+                        <div class="icons-btn">HTML</div>
+                        <div class="icons-btn">CSS</div>
+                        <div class="icons-btn">JavaScript</div>
+                        <div class="icons-btn">React JS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-photo">
+                <img src="./foto.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="about-me" id="about-me">
+        <h3>ABOUT ME</h3>
+        <div class="about-me-wrapper">
+            <div class="wrapper-left">
+                <img src="./desk2.jpg" alt="">
+            </div>
+            <div class="wrapper-right">
+                <h2>A Passionate Junior Front-end Web Developer</h2>
+                <p>
+                    I'm currently studying Educational Mechatronics Engineering at Yogyakarta State University. Yeah, it may seem a bit unrelated, but I'm very passionate about becoming a Web Developer. As a junior front-end developer, I have acquired some skills such as HTML, CSS, Tailwind CSS, JavaScript, and React JS. I am devoted to creating remarkable online experiences by writing efficient code to build responsive and user-friendly interfaces. Moreover, I am extremely excited to take on a role in a team that strives to produce outstanding web applications.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <h3>MY PROJECTS</h3>
+        <div class="projects-wrapper">
+            <div class="projects-card">
+                <div class="card-title">Deano's
+                    <a href="#">Visit <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="card-img deanos">
+                    <div class="about-project">
+                        <div class="project-desc">Deano's is an e-commerce web application that offers various products. By collecting data from a free online API and adding a little bit of logic, this app is already filled with some features such as category filters, shopping cart, and wishlist.</div>
+                        <div class="project-skills">
+                            <div class="skills-icon">React JS</div>
+                            <div class="skills-icon">Tailwind CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-desc">
+                    <button onclick="readProject(0)">Read About Project</button>
+                </div>
+            </div>
+            <div class="projects-card">
+                <div class="card-title">Stefan.dev
+                    <a href="#">Visit <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="card-img">
+                    <div class="about-project">
+                        <div class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, voluptatem quia. Incidunt, enim aperiam officiis maiores quas tempora placeat quam doloremque perspiciatis veritatis dolorum ullam sunt esse, in, voluptate corrupti!</div>
+                        <div class="project-skills">
+                            <div class="skills-icon">React JS</div>
+                            <div class="skills-icon">Tailwind CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-desc">
+                    <button onclick="readProject(1)">Read About Project</button>
+                </div>
+            </div>
+            <div class="projects-card">
+                <div class="card-title">Stefan.dev
+                    <a href="#">Visit <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="card-img">
+                    <div class="about-project">
+                        <div class="project-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, voluptatem quia. Incidunt, enim aperiam officiis maiores quas tempora placeat quam doloremque perspiciatis veritatis dolorum ullam sunt esse, in, voluptate corrupti!</div>
+                        <div class="project-skills">
+                            <div class="skills-icon">React JS</div>
+                            <div class="skills-icon">Tailwind CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-desc">
+                    <button onclick="readProject(2)">Read About Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact-wrapper">
+            <h3>MY CONTACT</h3>
+            <div class="contact-line"></div>
+            <div class="contact-title">Wanna know me better? Just hit me up!</div>
+            <div class="contact-icons">
+                <div class="icon-wrapper">
+                    <a href="https://wa.me/6281321223711" target="_blank">
+                        <div class="icon-icon">
+                            <i class="fa-brands fa-whatsapp iconsss"></i>
+                        </div>
+                    </a>
+                    <div class="icon-desc">
+                        <div class="icon-desc-title">WhatsApp</div>
+                        <div class="icon-desc-info">+62 813-2122-3711</div>
+                    </div>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="mailto:famuld14@gmail.com" target="_blank">
+                        <div class="icon-icon">
+                            <i class="fa-regular fa-envelope iconsss"></i>
+                        </div>
+                    </a>
+                    <div class="icon-desc">
+                        <div class="icon-desc-title">Email</div>
+                        <div class="icon-desc-info">famuld14@gmail.com</div>
+                    </div>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="https://www.linkedin.com/in/faiz-maulidin-22a4b425b" target="_blank">
+                        <div class="icon-icon">
+                            <i class="fa-brands fa-linkedin iconsss"></i>
+                        </div>
+                    </a>
+                    <div class="icon-desc">
+                        <div class="icon-desc-title">LinkedIn</div>
+                        <div class="icon-desc-info">Faiz Maulidin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>
