@@ -371,6 +371,10 @@ body {
     background-image: url("./deanosPic.png");
 }
 
+.flowerize {
+    background-image: url("./flowerizePic.png");
+}
+
 .projects-card:hover .card-img {
     background-position-y: 100%;
     transition: background-position-y 6s ease-in-out
@@ -384,7 +388,7 @@ body {
     font-size: 1em;
     height: 100%;
     border-radius: 0.6em;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
     transform: translateY(-100%);
     transition: 0.3s ease-in-out;
@@ -404,7 +408,8 @@ body {
 
 .project-skills {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.75rem;
     flex-wrap: wrap;
     width: 100%;
 }
