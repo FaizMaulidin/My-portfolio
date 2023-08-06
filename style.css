@@ -375,6 +375,10 @@ body {
     background-image: url("./flowerizePic.png");
 }
 
+.muse {
+    background-image: url("./musePic.png");
+}
+
 .projects-card:hover .card-img {
     background-position-y: 100%;
     transition: background-position-y 6s ease-in-out
