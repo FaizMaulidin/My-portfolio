@@ -274,7 +274,8 @@ body {
     background-color: var(--bg-color);
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .projects-card {
@@ -374,9 +375,16 @@ body {
 .flowerize {
     background-image: url("./flowerizePic.png");
 }
+.deezerts {
+    background-image: url("./deezertsPic.png");
+}
 
 .muse {
     background-image: url("./musePic.png");
+}
+
+.munggon {
+    background-image: url("./munggonPic.png");
 }
 
 .projects-card:hover .card-img {
