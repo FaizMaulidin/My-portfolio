@@ -124,8 +124,10 @@ body {
 }
 
 .home-text {
-    display: grid;
-    row-gap: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    height: 100%;
     width: 100%;
 }
 
@@ -133,10 +135,13 @@ body {
     font-size: 3.5em;
     line-height: 1em;
     max-width: 15ch;
+
 }
 
 .desc {
     max-width: 48ch;
+    align-self: flex-start;
+
 }
 
 .home-link {
@@ -164,20 +169,22 @@ body {
 
 .tech-stack {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.25rem;
+    height: fit-content;
 }
 
 .tech-stack p {
     font-family: 'Mulish';
     font-size: 1.2em;
     font-weight: 700;
-    margin-top: 0.25rem;
+    height: 100%;
     width: 12ch;
 }
 
 .tech-stack .line {
-    margin-top: 0.25rem;
-    height: 1.5em;
+    display: block;
+    height: 2rem;
     width: 2px;
     background-color: #4d4d4d;
 }
@@ -196,8 +203,9 @@ body {
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.06);
     color: white;
     border-radius: 3em;
-    padding: 0.3em 1em;
+    padding: 0.4rem 1.25rem;
     font-weight: 400;
+    font-size: 0.7rem;
     background-color: var(--main-color);
 }
 
